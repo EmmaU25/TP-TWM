@@ -21,95 +21,48 @@
     <!--[if IE]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand" href="#">Container</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarsExample07">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown07" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-              <div class="dropdown-menu" aria-labelledby="dropdown07">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
+          <ul class="nav nav-pills nav-fill">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Start Wars</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="starwarsVue.html">Vue Js</a>
+          </li>
+          
+        </ul>
+        <!--image banne-->
+        <div class="text-center">
+            <img src="images/stw.jpg" class="img-fluid" alt="Responsive image"/>
+        </div>
+        
+        <div class="alert alert-dark text-center" role="alert"> 
+          <h2 class="name mb-0">Loading...</h2>
+        </div>
+        
+        <div class="row">
+        </div>
+        
+        <p class="text-center"><button class='btnNext btn btn-danger input-block-level'>Montrer plus personages</button></p>
+        <div><p></p></div>
+        
+        <div id="myModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title"></h4>
               </div>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-md-0">
-            <input class="form-control" type="text" placeholder="Search" aria-label="Search">
-          </form>
-        </div>
-      </div>
-    </nav>
-
-    <div class="container">
-      <div class="header">
-        <div class="alert alert-info" role="alert">
-          <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
-        </div>
-        <div class="btn-group dropup float-right">
-          <button type="button" class="btn btn-secondary">Dropup</button>
-          <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <span class="sr-only">Toggle Dropdown</span>
-          </button>
-          <div class="dropdown-menu">
-            ...
+              <div class="modal-body">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
           </div>
         </div>
-
-        <h3 class="text-muted">smin yeoman</h3>
-
-      </div>
-
-
-      <div class="jumbotron">
-        <h1>'Allo, 'Allo!</h1>
-        <p class="lead">Always a pleasure scaffolding your apps.</p>
-        <p><a class="btn btn-lg btn-success" href="#">Superb!</a></p>
-      </div>
-
-      <div class="row marketing">
-        <div class="col-sm-12 col-lg">
-          <h4>HTML5 Boilerplate</h4>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
-        </div>
-
-        <div class="col-sm-12 col-lg">
-          <h4>Sass</h4>
-          <p>Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.</p>
-        </div>
-
-        <div class="col-sm-12 col-lg">
-          <h4>Bootstrap</h4>
-          <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-        </div>
-
-        <div class="col-sm-12 col-lg">
-          <h4>Modernizr</h4>
-          <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
-        </div>
-      </div>
-
-      <img class="img-fluid" src="images/landscape.jpg">
-
-      <div class="footer">
-        <p>♥ from the Yeoman team</p>
-      </div>
-    </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
@@ -120,10 +73,10 @@
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
       ga('create','UA-XXXXX-X');ga('send','pageview');
     </script>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0-next/esm/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
